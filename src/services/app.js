@@ -1,6 +1,8 @@
 import { request } from '../utils'
-
+import {postf} from '../utils/request'
 export async function login (params) {
+  console.log("login:",params)
+ //return postf('/api/login',params,(data)=> data);
   return request('/api/login', {
     method: 'post',
     data: params

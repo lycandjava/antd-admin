@@ -14,7 +14,10 @@ let dataKey = mockStorge('AdminUsers', [
 
 module.exports = {
   'POST /api/login' (req, res) {
+    console.log("login-req",(req.body))
+    console.log("login-req",JSON.stringify(req.body))
     const userItem = req.body
+
     const response = {
       success: false,
       message: ''

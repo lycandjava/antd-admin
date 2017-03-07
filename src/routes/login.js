@@ -18,6 +18,7 @@ const login = ({
       if (errors) {
         return
       }
+      console.log(values)
       onOk(values)
     })
   }
